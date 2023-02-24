@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./estilo.css">
+    <title>MinjoDev</title>
+</head>
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">MinjoDev</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./images/portafolio.jpg" alt="">
+            </div>   
+            <h1>ALFREDO BUSTIOS</h1>
+            <h2>Full Stack Developer</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Alfredo Bustios </span>soy Desarrollador Web Full Stack e 
+            Ingeniero en Telecomunicaciones de profesión. En este portafolio podrán ver 
+            algunos proyectos y retos de desarrollo en los que he trabajado, como también
+            conocer más sobre las tecnologías que manejo.</p>
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            23-08-1996
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            924012049
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            nobrain173@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Arequipa, Perú
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>LINUX</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+     <!--SKILLS-->
+    <section class=skills id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Technical Skill-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML y CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>86%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso photoshop">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso python">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso react">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Professional Skill-->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>MTCNA</span>
+                        <div class="barra-skill">
+                            <div class="progreso mtcna">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo Colaborativo</span>
+                        <div class="barra-skill">
+                            <div class="progreso colab">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Redes y Telecomunicaciones</span>
+                        <div class="barra-skill">
+                            <div class="progreso teleco">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CCNA CISCO</span>
+                        <div class="barra-skill">
+                            <div class="progreso ccna">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>AWS Foundations</span>
+                        <div class="barra-skill">
+                            <div class="progreso aws">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria en Telecomunicaciones</h4>
+                        <span class="casa">Universidad Nacional San Agustín</span>
+                        <span class="fecha">2015-2019</span>
+                        <p> Estudie la carrera profesional de Ingenieria en Telecomunicaciones
+                            en la cual pude desarrollar habilidades en el ambito de redes y fibra
+                            óptica donde me encuentro laborando actualmente.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>CCNA</h4>
+                        <span class="casa">CCNA CISCO</span>
+                        <span class="fecha">2021-2022</span>
+                        <p> He podido realizar la certificacion CISCO CCNA para redes, esta habilidad 
+                            me ha permitido adentrarme a fondo en el conocimiento sobre equipos CISCO 
+                            para la correcta configuración y funcionamiento.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Analista NOC</h4>
+                        <span class="casa">MTCNA</span>
+                        <span class="fecha">2022-2023</span>
+                        <p> He podido realizar la certificacion MTCNA para redes, esta habilidad 
+                            me ha permitido adentrarme a fondo en el conocimiento sobre equipos Mikrotik 
+                            para la correcta configuración y funcionamiento.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de Trabajo</h3>
+                    <div class="item der">
+                        <h4>Supervisor Logistico</h4>
+                        <span class="casa">Codisal SAC</span>
+                        <span class="fecha">2021-2022</span>
+                        <p> Me encargue de la supervicion logistica para una empresa del rubro
+                            de primera necesidad donde pude desarrollar habilidades para el correcto
+                            uso de inventariado y stock.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista NOC</h4>
+                        <span class="casa">Misticom SAC</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>Cuento con experiencia en el rubro de redes de fibra óptica, ya que he podido 
+                           desarrollar soporte, configuración e implementación de equipos Mikrotik(MTCNA)
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador Full Stack</h4>
+                        <span class="casa">FreeLance</span>
+                        <span class="fecha">2023-Actualmente</span>
+                        <p> Actualmente me desempeño como desarrollador Full Stack FreeLance con conocimiento en 
+                            las siguiente tecnologías:HTML,CSS,JAVASCRIPT,REACT,BOOTSTRAP,
+                            MYSQL,NODEJS entre otras las cuales domino muy bien.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./images/nft.jpg" alt="">
+                    <div class="overlay">
+                        <h3>NFT</h3>
+                        <p>Diseño NFT HTML Y CSS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/calculator.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Calculadora</h3>
+                        <p>Diseño de Calculadora HTML,CSS y JS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/landingpage.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Landing News</h3>
+                        <p>Diseño de Landing News HTML, CSS y JS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/rating.jpg" alt="">
+                    <div class="overlay">
+                        <h3>RATING</h3>
+                        <p>Diseño Rating HTMLS Y CSS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/QR.jpg" alt="">
+                    <div class="overlay">
+                        <h3>QR</h3>
+                        <p>Diseño QR HTMLS Y CSS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./images/ordersum.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Order Summary Card</h3>
+                        <p>Diseño Order Summary Card HTMLS Y CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+           <h2>CONTACTO</h2> 
+           <div class="fila">
+                <!--Formulario(Forms)-->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Número Telefónico">
+                    <input type="text" placeholder="Dirección de Correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="./images/Ubicacion.JPG" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                Cerro Colorado, Arequipa,Peru
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile"></i>
+                                 Contacto: 924012049
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: nobrain173@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
